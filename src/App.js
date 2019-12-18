@@ -10,9 +10,14 @@ const MainPage = styled.div`
 
 function App() {
   const [teamList, setTeamList] = useState([]);
+
+  const addTeamMember = member => {
+    setTeamList(...teamList, member);
+  }
+
   return (
     <div className="App">
-      <Form />
+      <Form addTeamMember={addTeamMember} />
     </div>
   );
 }
