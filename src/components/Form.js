@@ -4,12 +4,14 @@ import { checkPropTypes } from 'prop-types';
 
 const FormContainer = styled.form`
     width: 500px;
+    background: #282c34;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     padding: 50px;
+    border-radius: 20px;
 `
 
 const Label = styled.label`
@@ -32,13 +34,14 @@ const Input = styled.input`
 const SubmitButton = styled.button`
     margin: 2rem auto 0 auto;
     background-color: #596273;
-    color: #fff;
+    color: #f1f2f4;
     font-size: 1.6rem;
-    border: 2px solid transparent;
+    border: 2px solid #f1f2f4;
     text-decoration: none;
     border-radius: 5px;
     padding: 0.5rem;
     &:hover {
+        color: #fff;
         border: 2px solid white;
         background-color: #282c34;
     }
