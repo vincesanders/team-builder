@@ -10,10 +10,12 @@ const Card = styled.div`
     padding-bottom: 0.25rem;
     margin: 2.5%;
     border-radius: 5px;
+    border: 4px solid #282c34;
 `
 
 const Header = styled.h3`
     font-size: 2rem;
+    margin-top: 0.5rem;
     margin-bottom: 0;
 `
 

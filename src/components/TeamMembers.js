@@ -9,9 +9,10 @@ const MembersContainer = styled.div`
 `
 
 export default props => {
+    console.log(props.teamList);
     return (
-        <div>
+        <MembersContainer>
             {props.teamList.map(member => <TeamMemberCard name={member.name} role={member.role} email={member.email} />)}
-        </div>  
+        </MembersContainer>  
     );
 }

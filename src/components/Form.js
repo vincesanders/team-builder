@@ -70,11 +70,29 @@ export default props => {
     return (
         <FormContainer onSubmit={submitForm}>
             <Label htmlFor='name' >Full Name</Label>
-            <Input id='name' type='text' name='name' placeholder='  Full Name' onChange={handleChanges} />
+            <Input 
+                id='name' 
+                type='text' 
+                name='name' 
+                placeholder='  Full Name' 
+                onChange={handleChanges} 
+                value={member.name}/>
             <Label htmlFor='email' >E-Mail</Label>
-            <Input id='email' type='email' name='email' placeholder='  member@email.com' onChange={handleChanges} />
+            <Input 
+                id='email' 
+                type='email' 
+                name='email' 
+                placeholder='  member@email.com' 
+                onChange={handleChanges} 
+                value={member.email}/>
             <Label htmlFor='role' >Role</Label>
-            <Input id='role' type='text' name='role' placeholder="  Member's role" onChange={handleChanges} />
+            <Input 
+                id='role' 
+                type='text' 
+                name='role' 
+                placeholder="  Member's role" 
+                onChange={handleChanges} 
+                value={member.role}/>
             <SubmitButton type='submit'>Add Team Member</SubmitButton>
         </FormContainer>
     );

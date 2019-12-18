@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import logo from './logo.svg';
 import './App.css';
 import Form from './components/Form';
 import TeamMembers from './components/TeamMembers';
-
-
-const MainPage = styled.div`
-
-`
 
 function App() {
   const [teamList, setTeamList] = useState([
@@ -20,7 +14,12 @@ function App() {
   ]);
 
   const addTeamMember = member => {
-    setTeamList(...teamList, member);
+    const newMember = {
+      name: member.name,
+      role: member.role,
+      email: member.email
+    };
+    setTeamList([...teamList, newMember]);
   }
 
   return (
