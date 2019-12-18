@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { checkPropTypes } from 'prop-types';
 
 const FormContainer = styled.form`
     width: 500px;

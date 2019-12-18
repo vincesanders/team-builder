@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import './App.css';
 import Form from './components/Form';
 import TeamMembers from './components/TeamMembers';

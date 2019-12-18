@@ -9,10 +9,9 @@ const MembersContainer = styled.div`
 `
 
 export default props => {
-    console.log(props.teamList);
     return (
         <MembersContainer>
-            {props.teamList.map(member => <TeamMemberCard name={member.name} role={member.role} email={member.email} />)}
+            {props.teamList.map((member, i) => <TeamMemberCard key={i} name={member.name} role={member.role} email={member.email} />)}
         </MembersContainer>  
     );
 }
