@@ -12,9 +12,36 @@ const FormContainer = styled.form`
     padding: 50px;
 `
 
+const Label = styled.label`
+    color: white;
+    font-size: 1.6rem;
+`
+
 const Input = styled.input`
     width: 400px;
     margin-bottom: 1rem;
+    background: #596273;
+    color: white;
+    font-size: 1.6rem;
+    border: none;
+    line-height: 2;
+    border-radius: 5px;
+    padding: 0.5rem;
+`
+
+const SubmitButton = styled.button`
+    margin: 2rem auto 0 auto;
+    background-color: #596273;
+    color: #fff;
+    font-size: 1.6rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    &:hover {
+        border: 2px solid white;
+        background-color: #282c34;
+    }
 `
 
 export default props => {
@@ -39,13 +66,13 @@ export default props => {
 
     return (
         <FormContainer onSubmit={submitForm}>
-            <label htmlFor='name' >Full Name</label>
-            <Input id='name' type='text' name='name' placeholder='Full Name' onChange={handleChanges} />
-            <label htmlFor='email' >E-Mail</label>
-            <Input id='email' type='email' name='email' placeholder='member@email.com' onChange={handleChanges} />
-            <label htmlFor='role' >Role</label>
-            <Input id='role' type='text' name='role' placeholder="Member's role" onChange={handleChanges} />
-            <button type='submit'>Add Team Member</button>
+            <Label htmlFor='name' >Full Name</Label>
+            <Input id='name' type='text' name='name' placeholder='  Full Name' onChange={handleChanges} />
+            <Label htmlFor='email' >E-Mail</Label>
+            <Input id='email' type='email' name='email' placeholder='  member@email.com' onChange={handleChanges} />
+            <Label htmlFor='role' >Role</Label>
+            <Input id='role' type='text' name='role' placeholder="  Member's role" onChange={handleChanges} />
+            <SubmitButton type='submit'>Add Team Member</SubmitButton>
         </FormContainer>
     );
 }
